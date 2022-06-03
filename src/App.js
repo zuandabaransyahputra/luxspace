@@ -1,9 +1,13 @@
 import 'assets/css/app.css';
+import HomePage from 'pages/HomePage';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-xl">Hello</h1>
+      <Router>
+        <Route path="/" component={HomePage} />
+      </Router>
     </div>
   );
 }
