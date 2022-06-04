@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Breadcrumb = ({ list }) => {
   return (
-    <section class="bg-gray-100 py-8 px-4">
-      <div class="container mx-auto">
-        <ul class="breadcrumb">
+    <section className="bg-gray-100 py-8 px-4">
+      <div className="container mx-auto">
+        <ul className="breadcrumb">
           {list?.map((item, index) => {
             const arias =
               index === list?.length ? { 'aria-label': 'current-page' } : {};

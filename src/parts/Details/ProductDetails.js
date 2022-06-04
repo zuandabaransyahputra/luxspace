@@ -2,94 +2,94 @@ import React from 'react';
 
 const ProductDetails = () => {
   return (
-    <section class="container mx-auto">
-      <div class="flex flex-wrap my-4 md:my-12">
-        <div class="w-full md:hidden px-4">
-          <h2 class="text-5xl font-semibold">Chair Thatty</h2>
-          <span class="text-xl">IDR 12.000.000</span>
+    <section className="container mx-auto">
+      <div className="flex flex-wrap my-4 md:my-12">
+        <div className="w-full md:hidden px-4">
+          <h2 className="text-5xl font-semibold">Chair Thatty</h2>
+          <span className="text-xl">IDR 12.000.000</span>
         </div>
-        <div class="flex-1">
-          <div class="slider">
-            <div class="thumbnail">
-              <div class="px-2">
+        <div className="flex-1">
+          <div className="slider">
+            <div className="thumbnail">
+              <div className="px-2">
                 <div
-                  class="item selected"
+                  className="item selected"
                   data-img="/images/content/showcase-1.front.jpg"
                 >
                   <img
                     src="/images/content/showcase-1.front.jpg"
                     alt="front"
-                    class="object-cover w-full h-full rounded-lg"
+                    className="object-cover w-full h-full rounded-lg"
                   />
                 </div>
               </div>
-              <div class="px-2">
+              <div className="px-2">
                 <div
-                  class="item"
+                  className="item"
                   data-img="/images/content/showcase-1.back.jpg"
                 >
                   <img
                     src="/images/content/showcase-1.back.jpg"
                     alt="back"
-                    class="object-cover w-full h-full rounded-lg"
+                    className="object-cover w-full h-full rounded-lg"
                   />
                 </div>
               </div>
-              <div class="px-2">
+              <div className="px-2">
                 <div
-                  class="item"
+                  className="item"
                   data-img="/images/content/showcase-1.rear.jpg"
                 >
                   <img
                     src="/images/content/showcase-1.rear.jpg"
                     alt="rear"
-                    class="object-cover w-full h-full rounded-lg"
+                    className="object-cover w-full h-full rounded-lg"
                   />
                 </div>
               </div>
-              <div class="px-2">
+              <div className="px-2">
                 <div
-                  class="item"
+                  className="item"
                   data-img="/images/content/showcase-1.side.jpg"
                 >
                   <img
                     src="/images/content/showcase-1.side.jpg"
                     alt="side"
-                    class="object-cover w-full h-full rounded-lg"
+                    className="object-cover w-full h-full rounded-lg"
                   />
                 </div>
               </div>
-              <div class="px-2">
-                <div class="item" data-img="/images/content/showcase-1.top.jpg">
+              <div className="px-2">
+                <div className="item" data-img="/images/content/showcase-1.top.jpg">
                   <img
                     src="/images/content/showcase-1.top.jpg"
                     alt="top"
-                    class="object-cover w-full h-full rounded-lg"
+                    className="object-cover w-full h-full rounded-lg"
                   />
                 </div>
               </div>
             </div>
-            <div class="preview">
-              <div class="item rounded-lg h-full overflow-hidden">
+            <div className="preview">
+              <div className="item rounded-lg h-full overflow-hidden">
                 <img
                   src="/images/content/showcase-1.front.jpg"
                   alt="front"
-                  class="object-cover w-full h-full rounded-lg"
+                  className="object-cover w-full h-full rounded-lg"
                 />
               </div>
             </div>
           </div>
         </div>
-        <div class="flex-1 px-4 md:p-6">
-          <h2 class="text-5xl font-semibold">Chair Thatty</h2>
-          <p class="text-xl">IDR 12.000.000</p>
+        <div className="flex-1 px-4 md:p-6">
+          <h2 className="text-5xl font-semibold">Chair Thatty</h2>
+          <p className="text-xl">IDR 12.000.000</p>
 
           <a
             href="cart.html"
-            class="transition-all duration-200 bg-pink-400 text-black focus:bg-black focus:text-pink-400 rounded-full px-8 py-3 mt-4 inline-flex"
+            className="transition-all duration-200 bg-pink-400 text-black focus:bg-black focus:text-pink-400 rounded-full px-8 py-3 mt-4 inline-flex"
           >
             <svg
-              class="fill-current mr-3"
+              className="fill-current mr-3"
               width="26"
               height="24"
               viewBox="0 0 26 24"
@@ -102,15 +102,15 @@ const ProductDetails = () => {
             </svg>
             Add to Cart
           </a>
-          <hr class="my-8" />
+          <hr className="my-8" />
 
-          <h6 class="text-xl font-semibold mb-4">About the product</h6>
-          <p class="text-xl leading-7 mb-6">
+          <h6 className="text-xl font-semibold mb-4">About the product</h6>
+          <p className="text-xl leading-7 mb-6">
             Tailored to a level of perfection synonymous with that of a Savile
             Row suit and with understated quality in the detail, Jetty has been
             influenced by timeless 1950s style.
           </p>
-          <p class="text-xl leading-7">
+          <p className="text-xl leading-7">
             Providing a subtle nod to the past, Jetty also provides a perfect
             solution for the way we work today. A comprehensive product family,
             Jetty features a variety of elegant chairs and sofas.
