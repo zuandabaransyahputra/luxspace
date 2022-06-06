@@ -29,7 +29,7 @@ const Suggestion = ({ data }) => {
                 <h5 className="text-lg font-semibold mt-4">{item.title}</h5>
                 <span className="">IDR {item.price}</span>
                 <Link
-                  to={`categories/${item.idc}/products/${item.id}`}
+                  to={`/categories/${item.idc}/products/${item.id}`}
                   className="stretched-link"
                 ></Link>
               </div>
