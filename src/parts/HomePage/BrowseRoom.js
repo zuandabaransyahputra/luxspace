@@ -37,9 +37,8 @@ function Loading({ ratio = {} }) {
     return (
       <div
         key={item.id}
-        className={`relative card ${
-          ratio?.wrapper.default?.[item.ratio.default]
-        } ${ratio?.wrapper.md?.[item.ratio.md]}`}
+        className={`relative card ${ratio?.wrapper.default?.[item.ratio.default]
+          } ${ratio?.wrapper.md?.[item.ratio.md]}`}
         style={{ height: index === 0 ? '180px' : 'auto' }}
       >
         <div className="bg-gray-300 rounded-lg w-full h-full">
@@ -54,7 +53,7 @@ function Loading({ ratio = {} }) {
 }
 
 const BrowseRoom = () => {
-  const { data, error, status, run, isLoading } = useAsync();
+  const { data, run, isLoading } = useAsync();
 
   useEffect(() => {
     run(fetchData({ url: '/api/categories/?page=1&limit=4' }));
@@ -99,9 +98,8 @@ const BrowseRoom = () => {
             data.data.map((item, index) => (
               <div
                 key={item.id}
-                className={`relative card ${
-                  ratioClassNames?.wrapper.default?.[item.ratio.default]
-                } ${ratioClassNames?.wrapper.md?.[item.ratio.md]}`}
+                className={`relative card ${ratioClassNames?.wrapper.default?.[item.ratio.default]
+                  } ${ratioClassNames?.wrapper.md?.[item.ratio.md]}`}
                 style={{ height: index === 0 ? '180px' : 'auto' }}
               >
                 <div className="card-shadow rounded-xl">
@@ -112,9 +110,8 @@ const BrowseRoom = () => {
                   />
                 </div>
                 <div
-                  className={`overlay ${
-                    ratioClassNames?.meta?.[item.ratio.md]
-                  }`}
+                  className={`overlay ${ratioClassNames?.meta?.[item.ratio.md]
+                    }`}
                 >
                   <h5 className="text-lg font-semibold">{item.title}</h5>
                   <span className="">

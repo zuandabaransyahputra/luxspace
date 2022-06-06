@@ -5,20 +5,22 @@ import Details from 'pages/Details';
 import HomePage from 'pages/HomePage';
 import NotFound from 'pages/NotFound';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Provider from 'helpers/hooks/useGlobalContext';
 
 function App() {
   return (
-    <div className="App">
+    <Provider>
       <Router>
         <Switch >
           <Route path="/" exact component={HomePage} />
-          <Route path="/categories/:idc" component={Details} />
+          <Route exact path="/categories/:idc" component={Details} />
+          <Route path="/categories/:idc/products/:idp" component={Details} />
           <Route path="/cart" component={Cart} />
           <Route path="/congratulation" component={Congratulation} />
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>
-    </div>
+    </Provider>
   );
 }
 
