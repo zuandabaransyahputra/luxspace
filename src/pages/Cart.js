@@ -5,10 +5,11 @@ import Header from 'parts/Header';
 import SiteMap from 'parts/SiteMap';
 import ShoppingCart from 'parts/Cart/ShoppingCart';
 import ShippingDetails from 'parts/Cart/ShippingDetails';
+import Document from 'parts/Document';
 
 const Cart = () => {
   return (
-    <>
+    <Document>
       <Header theme={'black'} />
       <Breadcrumb
         list={[
@@ -34,7 +35,7 @@ const Cart = () => {
       <Suggestion /> */}
       <SiteMap />
       <Footer />
-    </>
+    </Document>
   );
 };
 

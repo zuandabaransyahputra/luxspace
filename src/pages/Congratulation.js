@@ -1,4 +1,5 @@
 import Breadcrumb from 'components/Breadcrumb'
+import Document from 'parts/Document'
 import Footer from 'parts/Footer'
 import Header from 'parts/Header'
 import SiteMap from 'parts/SiteMap'
@@ -7,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 const Congratulation = () => {
     return (
-        <>
+        <Document>
             <Header />
             <Breadcrumb
                 list={[
@@ -46,7 +47,7 @@ const Congratulation = () => {
             </section>
             <SiteMap />
             <Footer />
-        </>
+        </Document>
     )
 }
 

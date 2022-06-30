@@ -6,14 +6,11 @@ import Hero from 'parts/HomePage/Hero';
 import BrowseRoom from 'parts/HomePage/BrowseRoom';
 import JustArrived from 'parts/HomePage/JustArrived';
 import SiteMap from 'parts/SiteMap';
-import useScrollAnchor from 'helpers/hooks/useScrollAnchor';
-import useModalDOM from 'helpers/hooks/useModalDOM';
+import Document from 'parts/Document';
 
 const HomePage = () => {
-  useScrollAnchor();
-  useModalDOM()
   return (
-    <>
+    <Document>
       <Header theme={"white"} position="absolute" />
       <Hero />
       <BrowseRoom />
@@ -21,7 +18,7 @@ const HomePage = () => {
       <Clients />
       <SiteMap />
       <Footer />
-    </>
+    </Document>
   );
 };
 
